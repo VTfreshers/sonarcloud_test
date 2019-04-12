@@ -11,10 +11,10 @@ pipeline {
 				steps
 				{
 					sh label: '', script: '''mvn sonar:sonar \\
-  -Dsonar.projectKey=VTfreshers_maven-simple \\
-  -Dsonar.organization=vtfreshers-github \\
-  -Dsonar.host.url=https://sonarcloud.io \\
-  -Dsonar.login=86f2205b0f36770c30a9182a88df03ce703441d4'''
+  					-Dsonar.projectKey=VTfreshers_sonarcloud_test \\
+  					-Dsonar.organization=vtfreshers-github \\
+  					-Dsonar.host.url=https://sonarcloud.io \\
+  					-Dsonar.login=413636f44376b5ce6a179d443ec50a3992f96f4f'''
 				}
 			}
 	    stage ('test'){	
